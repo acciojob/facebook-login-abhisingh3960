@@ -11,14 +11,12 @@ body {
     gap: 50px;
     align-items: flex-start;
 }
-.facebook {
+.facebook.left {
     width: 450px;
-}
-#left {
     margin-top: 70px;
     display: inline-block;
 }
-#right {
+.facebook.right {
     display: flex;
     flex-direction: column;
 }

@@ -16,14 +16,12 @@
             gap: 50px;
             align-items: flex-start;
         }
-        .facebook {
+        .facebook.left {
             width: 450px;
-        }
-        #left {
             margin-top: 70px;
             display: inline-block;
         }
-        #right {
+        .facebook.right {
             display: flex;
             flex-direction: column;
         }
@@ -68,11 +66,11 @@
 </head>
 <body>
     <div class="main_container">
-        <div class="facebook" id="left">
+        <div class="facebook left">
             <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo">
             <p>Facebook helps you connect and share with the people in your life.</p>
         </div>
-        <div class="facebook" id="right">
+        <div class="facebook right">
             <form>
                 <input type="text" id="email" placeholder="Email address or phone number">
                 <input type="password" id="password" placeholder="Password">
