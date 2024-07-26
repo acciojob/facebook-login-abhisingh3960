@@ -1,24 +1,78 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Facebook Login</title>
-  </head>
-  <body>
-    <!-- Write your code here -->
-	  <div class="main_conatiner">
-		  <div class="facebook" id="left">
-			  <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo">
-			 <p>Facebook helps you connect and share with the people in your life.</p>
-		  </div>
-		  <div class="facebook" id="right">
-			  <form>
-				  <input type="text" id="email" placeholder="Email address or phone number"><br>
-				  <input type="password" id="password" placeholder="Password"><br>
-				  <button type="submit">Log in</button><br>
-				  <a>Forgotten account?</a><br>
-				  <button id="signup" type="submit">Create new account</button>
-				  
-			  </form>
-		  </div>
-	  </div>
-  </body>
+    <style>
+        body {
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .main_container {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+        .facebook {
+            width: 450px;
+        }
+        #left {
+            margin-top: 70px;
+        }
+        #right {
+            display: flex;
+            flex-direction: column;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ccc;
+            gap: 10px;
+        }
+        form input {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        button {
+            background-color: #1877f2;
+            border-radius: 5px;
+            padding: 10px 0;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #signup {
+            background-color: #42b72a;
+        }
+        a {
+            text-decoration: none;
+            color: #1877f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        <div class="facebook" id="left">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo">
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div class="facebook" id="right">
+            <form>
+                <input type="text" id="email" placeholder="Email address or phone number"><br>
+                <input type="password" id="password" placeholder="Password"><br>
+                <button type="submit">Log in</button><br>
+                <a href="#">Forgotten account?</a><br>
+                <button id="signup" type="button">Create new account</button>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
