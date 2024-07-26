@@ -19,8 +19,9 @@
         .facebook {
             width: 450px;
         }
-        .left-img{
+        #left {
             margin-top: 70px;
+            display: inline-block;
         }
         #right {
             display: flex;
@@ -44,34 +45,35 @@
         button {
             background-color: #1877f2;
             border-radius: 5px;
-            padding: 10px 0;
+            padding: 10px 20px;
+            width: 100%;
             color: white;
             border: none;
             cursor: pointer;
-        }
-        #signup {
-            background-color: #42b72a;
         }
         a {
             text-decoration: none;
             color: #1877f2;
         }
+        .signup {
+            background-color: #42b72a;
+        }
     </style>
 </head>
 <body>
     <div class="main_container">
-        <div class="facebook" class="left img">
+        <div class="facebook" id="left">
             <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo">
             <p>Facebook helps you connect and share with the people in your life.</p>
         </div>
         <div class="facebook" id="right">
             <form>
-                <input type="text" id="email" placeholder="Email address or phone number"><br>
-                <input type="password" id="password" placeholder="Password"><br>
-                <button type="submit">Log in</button><br>
-                <a href="#">Forgotten account?</a><br>
-                <button id="signup" type="button">Create new account</button>
+                <input type="text" id="email" placeholder="Email address or phone number">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Log in</button>
+                <a href="#">Forgotten account?</a>
             </form>
+            <button class="signup">Create new account</button>
         </div>
     </div>
 </body>
